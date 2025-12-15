@@ -1,4 +1,5 @@
 import Cover from "./Cover";
+import TrackList from "./TrackList";
 
 export default function Album() {
   return (
@@ -6,6 +7,7 @@ export default function Album() {
       <>
         <Cover />
         <div className="my-6 h-0.5 border-b border-b-zorba"></div>
+        <TrackList />
       </>
     </div>
   );

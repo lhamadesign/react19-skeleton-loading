@@ -24,7 +24,7 @@ const fetchCover = async (): Promise<AlbumCover> => {
 };
 
 const CoverSkeleton = () => (
-  <div className="flex items-center gap-4">
+  <div className="flex items-center gap-4 w-full">
     <div className="w-cover h-cover bg-zorba animate-pulse rounded-xl"></div>
     <div className="flex flex-col gap-2">
       <div className="w-[480px] h-10 bg-zorba animate-pulse"></div>
@@ -64,8 +64,8 @@ export default function Cover() {
         className="w-cover h-cover bg-zorba rounded-xl border border-zorba"
       />
       <div className="flex flex-col gap-2">
-        <h3 className="text-zorba text-4xl">{cover.title}</h3>
-        <span className="text-cararra text-2xl">{cover.artist}</span>
+        <h3 className="text-cararra text-4xl">{cover.title.toUpperCase()}</h3>
+        <span className="text-zorba text-2xl">{cover.artist}</span>
         <div className="flex items-center gap-2 text-xl">
           <span className="text-zorba">{cover.genre}</span>
           <span className="text-zorba">{` · `}</span>
